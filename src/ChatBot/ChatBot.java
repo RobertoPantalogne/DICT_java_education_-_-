@@ -17,12 +17,26 @@ public class ChatBot {
         int remainder3 = scamer.nextInt();
         int remainder5 = scamer.nextInt();
         int remainder7 = scamer.nextInt();
-       int age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105;
+        int age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105;
         System.out.println("Your age is " + age + "; that`s a great age to start programming!");
         System.out.println("Now I can prove you that I can count any number");
         int number = scamer.nextInt();
         for (int i = 0; i <= number; i++) {
             System.out.printf("%d!\n",i);
+        }
+        System.out.println("Why do we use methods?\n" +
+                "1.To repeat a statement multiple times.\n" +
+                "2.To decompose a program into several small subroutines.\n" +
+                "3.To determine the execution time of a program.\n" +
+                "4 To interrupt the execution of a program.\n");
+        while(true){
+            Scanner ab = new Scanner(System.in);
+            System.out.print("");
+            int num = Integer.parseInt(ab.next());
+            if (num == 2) {
+                System.out.println("Great , you right!");
+            break;
+            } else System.out.println("Please , try again.");
         }
 
     }
