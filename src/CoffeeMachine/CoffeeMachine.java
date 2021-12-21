@@ -28,7 +28,7 @@ public class CoffeeMachine {
 
             private void Availability() {
                 System.out.println("The coffee machine has: ");
-                System.out.println(this.water + " of water");
+                System.out.println(this.water + " of water.");
                 System.out.println(this.milk + " of milk");
                 System.out.println(this.beans + " of coffee beans");
                 System.out.println(this.cups + " of disposable cups");
@@ -78,7 +78,6 @@ public class CoffeeMachine {
 
                         System.out.println("Write how many grams of coffee beans do you want to add: ");
                         this.beans += in.nextInt();
-
                         System.out.println("Write how many disposable cups of coffee do you want to add: ");
                         this.cups += in.nextInt();
                         break;
