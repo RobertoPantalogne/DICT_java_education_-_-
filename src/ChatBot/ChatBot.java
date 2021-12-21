@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 public class ChatBot {
     public static void main(String[] args){
-        Scanner scamer = new Scanner(System.in);
+
+         Scanner scamer = new Scanner(System.in);
         String bot_name = "Mehmet";
         int birth_year = 1992;
         System.out.println("Hello my name is " + bot_name);
@@ -18,9 +19,11 @@ public class ChatBot {
         int remainder7 = scamer.nextInt();
        int age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105;
         System.out.println("Your age is " + age + "; that`s a great age to start programming!");
-
-
-
+        System.out.println("Now I can prove you that I can count any number");
+        int number = scamer.nextInt();
+        for (int i = 0; i <= number; i++) {
+            System.out.printf("%d!\n",i);
+        }
 
     }
 }
